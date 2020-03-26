@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tree</title>
+  <script src="tree.js"></script>
+</head>
+
+<body>
+  <script>
+    const data = [
+      { no: '100', parent_no: null },
+      { no: '100001', parent_no: '100' },
+      { no: '100001001', parent_no: '100001' },
+      { no: '100002', parent_no: '100' },
+      { no: '100002001', parent_no: '100002' }
+    ]
+    const tree = new MyTree('100', 'no', 'parent_no');
+    console.log(tree.generateTree(data));
+
+  </script>
+</body>
+
+</html>
